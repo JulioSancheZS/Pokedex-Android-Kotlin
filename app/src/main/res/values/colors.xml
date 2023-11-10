@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="red">#ED1B1E</color>
+    <color name="blue_dark">#0C1A57</color>
+
+    <!--Color Boton-->
+    <color name="boton_sig">#0C1A57</color>
+
+    <!--Color Por tipo de Pokemon-->
+    <color name="bicho">#729F3F</color>
+    <color name="dragon">#F16E57</color>
+    <color name="hada">#FDB9E9</color>
+    <color name="fuego">#FD7D24</color>
+    <color name="fantasma">#7B62A3</color>
+    <color name="tierra">#AB9842</color>
+    <color name="normal">#A4ACAF</color>
+    <color name="psiquico">#F366B9</color>
+    <color name="acero">#9EB7B8</color>
+    <color name="siniestro">#707070</color>
+    <color name="electrico">#EED535</color>
+    <color name="lucha">#D56723</color>
+    <color name="volador">#3DC7EF</color>
+    <color name="planta">#9BCC50</color>
+    <color name="hielo">#51C4E7</color>
+    <color name="veneno">#B97FC9</color>
+    <color name="roca">#A38C21</color>
+    <color name="agua">#4491C3</color>
+    <color name="default_color">#FF0000</color>
+
+
+    <color name="pokemon_stat_hp">#30A7D7</color>
+    <color name="pokemon_stat_attack">#30A7D7</color>
+    <color name="pokemon_stat_defense">#30A7D7</color>
+    <color name="pokemon_stat_special_attack">#30A7D7</color>
+    <color name="pokemon_stat_special_defense">#30A7D7</color>
+    <color name="pokemon_stat_speed">#30A7D7</color>
+
+
+    <!--Color Background-->
+    <color name="splash_color">#CA215A</color>
+
+</resources>

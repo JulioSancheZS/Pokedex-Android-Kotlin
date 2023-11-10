@@ -1,0 +1,381 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="#CA215A"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="108dp"
+                android:layout_marginLeft="24dp"
+                android:layout_marginTop="6dp"
+                android:layout_marginRight="24dp"
+                android:background="@drawable/bg_pokidex_1"
+                android:orientation="horizontal"
+                android:padding="6dp">
+
+                <ImageView
+                    android:id="@+id/dashboard_btn_camera_start"
+                    android:layout_width="84dp"
+                    android:layout_height="84dp"
+                    android:src="@drawable/icon_cam" />
+
+                <ImageView
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:src="@drawable/icon_radar_red" />
+
+                <ImageView
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:src="@drawable/icon_radar_yellow" />
+
+                <ImageView
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:src="@drawable/icon_radar_green" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="216dp"
+                    android:layout_height="216dp"
+                    android:layout_marginLeft="24dp"
+                    android:background="@drawable/bg_screen"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="3dp"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="16dp"
+                            android:layout_height="16dp"
+                            android:src="@drawable/icon_radar_red" />
+
+                        <ImageView
+                            android:layout_width="16dp"
+                            android:layout_height="16dp"
+                            android:src="@drawable/icon_radar_red" />
+                    </LinearLayout>
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="6dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginBottom="34dp">
+
+                        <ImageView
+                            android:id="@+id/ivPokemon"
+                            android:layout_width="match_parent"
+                            android:scaleType="fitXY"
+                            android:layout_height="match_parent" />
+                    </FrameLayout>
+
+                </LinearLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="108dp"
+                    android:layout_height="108dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="6dp">
+
+
+
+                    <LinearLayout
+                        android:layout_width="36dp"
+                        android:layout_height="36dp"
+                        android:background="@drawable/bg_arrow_right"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                       <ImageButton
+                           android:id="@+id/btnSigPokemon"
+                           android:layout_width="match_parent"
+                           android:src="@drawable/icon_right"
+                           android:background="@color/boton_sig"
+                           android:layout_height="match_parent"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="36dp"
+                        android:layout_height="36dp"
+                        android:background="@drawable/bg_arrow_left"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <ImageButton
+                            android:id="@+id/btnAntPokemon"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@color/boton_sig"
+                            android:src="@drawable/icon_left" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="36dp"
+                        android:layout_height="36dp"
+                        android:background="@color/blue_dark"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/icon_cam_click" />
+                    </LinearLayout>
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="#FE1A55"
+            android:orientation="vertical"
+            android:paddingTop="12dp">
+
+            <TextView
+                android:id="@+id/tvPokemonName"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="6dp"
+                android:layout_marginRight="12dp"
+                android:layout_marginBottom="6dp"
+                android:background="@drawable/bg_input_name"
+                android:gravity="center"
+                tools:hint="Charizard"
+                android:maxLength="10"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:textColor="#fff"
+                android:textColorHint="#e9e9e9"
+                android:textSize="24dp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:id="@+id/addTipo"
+                android:layout_width="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="50dp">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="150dp"
+                    android:visibility="gone"
+                    app:cardCornerRadius="16dp"
+                    app:cardBackgroundColor="@color/veneno"
+                    android:layout_marginRight="16dp"
+                    android:layout_height="40dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:text="Veneno"
+
+                        android:layout_gravity="center_vertical|center_horizontal"
+                        android:textAllCaps="true"
+                        android:textStyle="bold"
+                        android:textSize="16dp"
+                        android:layout_height="wrap_content"/>
+
+                </androidx.cardview.widget.CardView>
+                <!--
+
+
+
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="150dp"
+                    app:cardBackgroundColor="@color/agua"
+                    app:cardCornerRadius="16dp"
+                    android:layout_height="40dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:text="Agua"
+                        android:layout_gravity="center_vertical|center_horizontal"
+                        android:textAllCaps="true"
+                        android:textStyle="bold"
+                        android:textSize="16dp"
+                        android:layout_height="wrap_content"/>
+
+                </androidx.cardview.widget.CardView>
+   -->
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_marginHorizontal="16dp"
+                android:gravity="bottom"
+                android:layout_marginTop="24dp"
+                android:orientation="horizontal">
+
+                <FrameLayout
+                    android:id="@+id/viewHp"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:background="@color/pokemon_stat_hp"
+                    android:layout_marginHorizontal="4dp"
+                    android:layout_weight="1">
+                </FrameLayout>
+
+                <View
+                    android:id="@+id/viewAttack"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:background="@color/pokemon_stat_attack"
+                    android:layout_marginHorizontal="4dp"
+                    android:layout_weight="1"/>
+
+                <View
+                    android:id="@+id/viewDefence"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:background="@color/pokemon_stat_defense"
+                    android:layout_marginHorizontal="4dp"
+                    android:layout_weight="1"/>
+
+                <View
+                    android:id="@+id/viewSpecialAttack"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:background="@color/pokemon_stat_special_attack"
+                    android:layout_marginHorizontal="4dp"
+                    android:layout_weight="1"/>
+
+                <View
+                    android:id="@+id/viewSpecialDefense"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:background="@color/pokemon_stat_special_defense"
+                    android:layout_marginHorizontal="4dp"
+                    android:layout_weight="1"/>
+
+                <View
+                    android:id="@+id/viewSpeed"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:background="@color/pokemon_stat_speed"
+                    android:layout_marginHorizontal="4dp"
+                    android:layout_weight="1"/>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="16dp"
+                android:gravity="bottom"
+                android:layout_marginTop="4dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="4dp"
+                    android:singleLine="true"
+                    android:maxLines="1"
+                    android:textColor="@color/white"
+                    android:text="HP"
+                    android:textSize="10sp"
+                    android:layout_weight="1"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:text="Attack"
+                    android:layout_height="wrap_content"
+                    android:textSize="10sp"
+                    android:singleLine="true"
+                    android:textColor="@color/white"
+                    android:maxLines="1"
+                    android:layout_marginHorizontal="4dp"
+                    android:layout_weight="1"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:text="Defense"
+                    android:textSize="10sp"
+                    android:textColor="@color/white"
+                    android:singleLine="true"
+                    android:maxLines="1"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="4dp"
+                    android:layout_weight="1"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:text="Special-attack"
+                    android:singleLine="true"
+                    android:maxLines="1"
+                    android:textColor="@color/white"
+                    android:layout_height="wrap_content"
+                    android:textSize="10sp"
+                    android:layout_marginHorizontal="4dp"
+                    android:layout_weight="1"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:text="Special-defense"
+                    android:layout_height="wrap_content"
+                    android:textSize="10sp"
+                    android:singleLine="true"
+                    android:maxLines="1"
+                    android:textColor="@color/white"
+                    android:layout_marginHorizontal="4dp"
+                    android:layout_weight="1"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:text="Speed"
+                    android:textColor="@color/white"
+                    android:layout_height="wrap_content"
+                    android:textSize="10sp"
+                    android:singleLine="true"
+                    android:maxLines="1"
+                    android:layout_marginHorizontal="4dp"
+                    android:layout_weight="1"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="24dp"
+        android:background="@drawable/icon_separator"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
